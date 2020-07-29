@@ -24,7 +24,7 @@ extension ViewController {
         imgView.image = UIImage.cq.color(RGB(51, 51, 51))
         view.addSubview(imgView)
     }
-    
+     
     func demo02() {
         print("123456das789".cq.numberCount)
     }
