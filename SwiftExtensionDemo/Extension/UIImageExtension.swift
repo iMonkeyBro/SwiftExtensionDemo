@@ -29,10 +29,8 @@ extension CQ where Base == UIImage {
         let ctx = UIGraphicsGetCurrentContext()
         ctx?.setFillColor(color.cgColor)
         ctx?.fill(rect)
-        var image = UIGraphicsGetImageFromCurrentImageContext()!
+        let image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
-        let imageData = image.jpegData(compressionQuality: 1.0)!
-        image = UIImage(data: imageData)!
         return image
     }
 }
